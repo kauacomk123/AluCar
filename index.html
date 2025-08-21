@@ -7,9 +7,11 @@
     <title>AluCar-Aluguel de Carros</title>
 </head>
 <body>
+    <div class="container">
     <header class="secao-topo">
         <p class="secao-largura-limitada">AluCar</p>
     </header>
+    </div>
 
     <section class="secao-background-capa">
         <div class="secao-background-conteudo">
@@ -21,6 +23,7 @@
     </section>
 
     <section class="sobre">
+         <div class="container">
         <h2>Sobre nós</h2>
         <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. 
 Temos os melhores preços e modelos do mercado.</p>
@@ -34,16 +37,25 @@ Temos os melhores preços e modelos do mercado.</p>
             <li>| Os melhores carros estão aqui!</li>
             <li>| Assistência 24hrs.</li>
         </ul>
+        </div>
     </section>
 
-    <div class="contato">Contato</div>
 
+    <div class="divisao-background">
+        <h3>Contato</h3>
+    </div>
+
+         <div class="container">
+            <div class="form-info">
         <h3>Análise de cadastro</h3>
         <p>Preencha os campos abaixo e analisaremos seus dados.<br>Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
-        <form method="post" action="">
+       </div>
 
+       
+        <form method="post" action="">
             <fieldset>
                 <legend>Dados pessoais</legend>
+                
         <label>Nome</label>
         <input type="text" name="nome" placeholder="Digite seu nome" required>
     
@@ -66,6 +78,8 @@ Temos os melhores preços e modelos do mercado.</p>
 
 
         <fieldset>
+             <legend>Carro</legend>
+              <label>Modelo de Carro</label>
             <select name="carro" required>
                 <option value="">Escolha um carro</option>
                 <optgroup label="Volkswagem">
@@ -91,10 +105,11 @@ Temos os melhores preços e modelos do mercado.</p>
     <button type="submit">Envia dados</button>
 
     </form>
+    </div>
+    </div>
 
     <footer>
         <span>Copyright 2022-AluCar</span>
     </footer>
-
 </body>
 </html>
