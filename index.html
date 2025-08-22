@@ -40,25 +40,24 @@
         <h3>Contato</h3>
     </div>
 
-         <div class="container">
-            <div class="form-info">
-        <h3>Análise de cadastro</h3>
-        <p>Preencha os campos abaixo e analisaremos seus dados.<br>Se tudo estiver correto ligaremos para marcar uma visita sua à loja.</p>
-       </div>
+        <main>
+            <section class="secao-largura-limitada secao-conteudo">
+                <h3>Analise de Cadastro</h3>
+                <p>Preencha os campos abaixo e analisaremos seus dados.<br>
+                Se tudo estiver correto ligaremos para marca uma visita sua á loja.</p>
+                <form method="post" action="">
 
-       
-        <form method="post" action="">
 <fieldset>
     <legend>Dados pessoais</legend>
-    <div>
+    <div class="grupo-campo">
         <label>Nome</label>
         <input type="text" name="nome" placeholder="Digite seu nome" required>
     </div>
-    <div>
+    <div class="grupo-campo">
         <label>Data de nascimento</label>
         <input type="date" name="data_nascimento"  required>
     </div>
-    <div>
+    <div class="grupo-campo">
         <label>Telefone</label>
         <input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
     </div>
@@ -66,11 +65,11 @@
 
 <fieldset>
     <legend>CNH</legend>
-    <div>
+    <div class="grupo-campo">
         <label>Número do Registro</label>
         <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
     </div>
-    <div>
+    <div class="grupo-campo">
         <label>Validade</label>
         <input type="date" name="Validade" required>
     </div>
@@ -78,7 +77,7 @@
 
 <fieldset>
     <legend>Carro</legend>
-    <div>
+    <div class="grupo-campo">
         <label>Modelo de Carro</label>
             <select name="carro" required>
                 <option value="">Escolha um carro</option>
@@ -102,15 +101,13 @@
             </select>
     </div>
 </fieldset>
-
     <button type="submit">Envia dados</button>
-
-    </form>
-    </div>
-    </div>
-
+                </form>
+            </section>
+        </main>
+    
     <footer>
-        <span>Copyright 2022-AluCar</span>
+        <p>Copyright 2022-AluCar</p>
     </footer>
 </body>
 </html>
