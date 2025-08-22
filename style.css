@@ -1,141 +1,141 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333;
-  background-color: #fff;
-  padding: 25px;
-  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+  color: #333; /* Cor padrão do texto */
+  background-color: #fff; /* Cor de fundo da página */
+  padding: 25px; /* Espaço interno da página (borda → conteúdo) */
+  margin: 0; /* Remove margens externas padrão do navegador */
 }
 
 .container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%; /* Ocupa 100% da largura disponível */
+  max-width: 800px; /* Limita a largura máxima */
+  margin: 0 auto; /* Centraliza o container na tela */
 }
 
 /* TOPO */
 .secao-topo {
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5; /* Linha cinza embaixo do topo */
 }
 
 .secao-topo p {
-  padding: 20px;
-  font-size: 22px;
-  font-weight: bold;
-  box-sizing: border-box;
+  padding: 20px; /* Espaço interno no parágrafo */
+  font-size: 22px; /* Tamanho do texto */
+  font-weight: bold; /* Texto em negrito */
+  box-sizing: border-box; /* Inclui padding dentro do tamanho total do elemento */
 }
 
 .secao-largura-limitada {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%; /* Ocupar 100% da largura do container pai */
+  max-width: 800px; /* Mas não ultrapassar 800px */
+  margin: 0 auto; /* Centraliza */
 }
 
 h1, h2 {
-  color: #fff;
-  margin: 0;
+  color: #fff; /* Cor branca para títulos maiores */
+  margin: 0; /* Remove margens padrão */
 }
+
 h3 {
-  margin: 0;
+  margin: 0; /* Remove margens padrão */
 }
 
 /* SEÇÃO COM IMAGEM DE FUNDO */
 .secao-background-capa {
-  min-height: 500px;
-  background-image: url(img/capa.png);
-  background-size: cover;
+  min-height: 500px; /* Altura mínima da capa */
+  background-image: url(img/capa.png); /* Imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir toda a área */
 }
 
 .secao-background-conteudo {
-  text-align: right;
-  padding: 50px 20px;
-  background: #00000085;
+  text-align: right; /* Alinha o texto à direita */
+  padding: 50px 20px; /* Espaço interno (vertical e horizontal) */
+  background: #00000085; /* Fundo preto semi-transparente */
 }
 
 /* CONTEÚDO */
 .secao-conteudo {
-  padding: 50px 20px;
-  box-sizing: border-box;
+  padding: 50px 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
 }
 
 .img-conteudo {
-  width: 250px;
-  height: 180px;
-  object-fit: contain;
+  width: 250px; /* Largura fixa das imagens */
+  height: 180px; /* Altura fixa */
+  object-fit: contain; /* Mantém proporção da imagem sem cortar */
 }
 
 .secao-conteudo span {
-  border-left: 1px solid;
-  padding-left: 10px;
-  font-size: 16px;
+  border-left: 1px solid; /* Linha vertical à esquerda */
+  padding-left: 10px; /* Espaço entre a linha e o texto */
+  font-size: 16px; /* Tamanho da fonte */
 }
 
 /* CONTATO */
 .divisao-background {
-  padding: 50px 0;
-  text-align: center;
-  background-color: #d92121;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;   
+  padding: 50px 0; /* Espaçamento em cima e embaixo */
+  text-align: center; /* Centraliza o texto */
+  background-color: #d92121; /* Fundo vermelho */
+  background-attachment: fixed; /* Faz o fundo ficar fixo ao rolar a página */
+  background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
+  background-size: cover; /* Faz a imagem ocupar toda a área */
 }
 
 .divisao-background h3 {
-  font-size: 36px;
-  background-color: #6c0000;
-  width: 100%;
-  margin: 0 auto;
-  color: #fff;
+  font-size: 36px; /* Tamanho grande do título */
+  background-color: #6c0000; /* Fundo vermelho escuro atrás do texto */
+  width: 100%; /* Ocupar toda a largura */
+  margin: 0 auto; /* Remove margens e centraliza */
+  color: #fff; /* Texto branco */
 }
 
-/*formulario 1*/
-
-.grupo-campo{
-  display: flex;
-  flex-direction: column;
+/* FORMULÁRIO */
+.grupo-campo {
+  display: flex; /* Exibe os itens em flexbox */
+  flex-direction: column; /* Organiza em coluna (um abaixo do outro) */
 }
 
-.grupo-campo input, .grupo-campo select{
-  margin: 12px 0;
-  height: 25px;
+.grupo-campo input, .grupo-campo select {
+  margin: 12px 0; /* Espaço acima e abaixo */
+  height: 25px; /* Altura dos campos */
 }
 
-.secao-conteudo fieldset{
-  margin: 12px 0;
-  display: flex;
-  flex-direction: column;
+.secao-conteudo fieldset {
+  margin: 12px 0; /* Espaçamento em volta */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Campos um embaixo do outro */
 }
 
-.secao-conteudo button{
-  width: 100%;
-  height: 32px;
-  background: #d92121;
-  border: none;
-  color: #fff;
+.secao-conteudo button {
+  width: 100%; /* Ocupa toda a largura */
+  height: 32px; /* Altura fixa */
+  background: #d92121; /* Fundo vermelho */
+  border: none; /* Remove borda padrão */
+  color: #fff; /* Texto branco */
 }
 
 /* RODAPÉ */
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 55px;
-  position: relative;
-  bottom: 0;
-  padding: 20px;
-  box-sizing: border-box;
-  background: #f8f8f8;
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 100%; /* Ocupar toda a largura */
+  height: 55px; /* Altura do rodapé */
+  position: relative; /* Posicionamento normal (não fica fixo) */
+  bottom: 0; /* Mantém no final */
+  padding: 20px; /* Espaço interno */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+  background: #f8f8f8; /* Fundo cinza claro */
 }
 
 footer p {
-  color: #d92121;
-  font-family: sans-serif;
-  text-align: center;
+  color: #d92121; /* Texto vermelho */
+  font-family: sans-serif; /* Fonte simples */
+  text-align: center; /* Centraliza o texto */
 }
 
-@media(max-width: 815px)
-{
-  .img-conteudo{
-    width: 100%;
+/* RESPONSIVIDADE */
+@media(max-width: 815px) { /* Quando a tela tiver no máximo 815px */
+  .img-conteudo {
+    width: 100%; /* As imagens passam a ocupar 100% da largura */
   }
 }
