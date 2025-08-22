@@ -7,9 +7,9 @@ body {
 }
 
 .container{
-    max-width: 1000px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 20 ;
 }
 
 /* TOPO */
@@ -32,12 +32,10 @@ body {
 
 h1,h2{
     color: #fff;
+    margin: 0;
 }
 
-h1,h2,h3{
-    margin: 13px;
-}
-
+/*seção com imahem de fundo*/
 .secao-background-capa{
     min-height: 500px;
     background-image: url(img/capa.png);
@@ -47,7 +45,7 @@ h1,h2,h3{
 .secao-background-conteudo{
     text-align: right;
     padding: 50px 20px;
-    background: #0000008e;
+    background: #00000085;
 }
 
 .banner-texto {
@@ -66,26 +64,29 @@ h1,h2,h3{
 /* SOBRE */
 .sobre {
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .sobre h2 {
   color: #000000;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  text-align: left;
 }
 
 .sobre p {
 font-size: 1rem;
 margin-bottom:20px;
 color: #444;
+text-align: left;
 }
 
 .sobre div img {
-  width: 200px;
+  width: 300px;
   margin: 10px;
   border-radius: 5px;
   transition: transform 0.3s;
+  position: static;
 }
 
 .sobre div img:hover {
@@ -100,12 +101,12 @@ color: #444;
 .sobre ul li {
   margin: 8px 0;
   font-size: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 /* CONTATO */
 .divisao-background{
-padding: 50px 0;
+padding: 30px 0;
 text-align: center;
 background-color: #d92121;
 background-attachment: fixed;
@@ -114,7 +115,7 @@ background-size: cover;
 }
 
 .divisao-background h3{
-    font-size: 36px;
+    font-size: 30px;
     background-color: #6c0000;
     width: 100%;
     margin: 0 auto;
